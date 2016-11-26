@@ -47,6 +47,7 @@ static const uint32_t ballCategory        =  0x1 << 1;
     enemy_bar.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(boardWidth, boardHeight)];
     enemy_bar.physicsBody.affectedByGravity = NO;
     enemy_bar.physicsBody.allowsRotation = NO;
+    enemy_bar.physicsBody.usesPreciseCollisionDetection = YES;
     _enemyBar = enemy_bar;
     
     [self addChild:enemy_bar];
@@ -60,6 +61,7 @@ static const uint32_t ballCategory        =  0x1 << 1;
     player_bar.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(boardWidth, boardHeight)];
     player_bar.physicsBody.affectedByGravity = NO;
     player_bar.physicsBody.allowsRotation = NO;
+    player_bar.physicsBody.usesPreciseCollisionDetection = YES;
     _playerBer = player_bar;
     
     [self addChild:player_bar];
@@ -78,6 +80,7 @@ static const uint32_t ballCategory        =  0x1 << 1;
     ball.physicsBody.angularDamping = 0.0f;
     ball.physicsBody.restitution = 1.0f;
     ball.physicsBody.categoryBitMask = ballCategory;
+    ball.physicsBody.usesPreciseCollisionDetection = YES;
     
     _ball = ball;
     
@@ -143,16 +146,24 @@ static const uint32_t ballCategory        =  0x1 << 1;
         _flag = YES;
         [_ball.physicsBody applyImpulse:CGVectorMake(50, 50)];
     }
+    float curpos = MAX(_currentPosition, 0) * 0.2;
+    double position = ((double)8833.0 - sqrt(((double)2693200.0f)*curpos - (double)325958111)) / 13466.0f;
+    float location = fabs(position) * CGRectGetMaxY(self.frame);
+    NSLog(@"location = %f, position = %f", location, position);
+    
+    float ypos = MIN(CGRectGetMinY(self.frame) + location, CGRectGetMaxY(self.frame) - 0.5 * _boardHeight);
+    //NSLog(@"ypos = %f", ypos);
     // Called before each frame is rendered
-    _playerBer.position = CGPointMake(CGRectGetMaxX(self.frame) - 0.5 * _boardWidth, CGRectGetMinX(self.frame) + _currentPosition);
+    _playerBer.position = CGPointMake(CGRectGetMaxX(self.frame) - 0.5 * _boardWidth, ypos);
     _enemyBar.position = CGPointMake(CGRectGetMinX(self.frame) + 0.5* _boardWidth, _ball.position.y);
     
     if (_ball.position.x + _ball.frame.size.width / 2 > _playerBer.position.x) {
-        NSLog(@"Hit the wall");
+        //NSLog(@"Hit the wall");
     }
 }
 
 - (void)updateYcoord:(float)y {
+    //NSLog(@"Y: %f", y);
     [self updateBoardLocation:y];
 }
 
