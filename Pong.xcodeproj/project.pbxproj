@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B2CA1571DE9B2DA00708BD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA1561DE9B2DA00708BD1 /* main.m */; };
+		8B2CA15A1DE9B2DA00708BD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA1591DE9B2DA00708BD1 /* AppDelegate.m */; };
+		8B2CA15C1DE9B2DA00708BD1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CA15B1DE9B2DA00708BD1 /* GameScene.sks */; };
+		8B2CA15E1DE9B2DA00708BD1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CA15D1DE9B2DA00708BD1 /* Actions.sks */; };
+		8B2CA1611DE9B2DA00708BD1 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA1601DE9B2DA00708BD1 /* GameScene.m */; };
+		8B2CA1641DE9B2DA00708BD1 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA1631DE9B2DA00708BD1 /* GameViewController.m */; };
+		8B2CA1671DE9B2DA00708BD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CA1651DE9B2DA00708BD1 /* Main.storyboard */; };
+		8B2CA1691DE9B2DA00708BD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CA1681DE9B2DA00708BD1 /* Assets.xcassets */; };
+		8B2CA16C1DE9B2DA00708BD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CA16A1DE9B2DA00708BD1 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B2CA1521DE9B2DA00708BD1 /* Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2CA1561DE9B2DA00708BD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B2CA1581DE9B2DA00708BD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B2CA1591DE9B2DA00708BD1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B2CA15B1DE9B2DA00708BD1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		8B2CA15D1DE9B2DA00708BD1 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		8B2CA15F1DE9B2DA00708BD1 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		8B2CA1601DE9B2DA00708BD1 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		8B2CA1621DE9B2DA00708BD1 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		8B2CA1631DE9B2DA00708BD1 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		8B2CA1661DE9B2DA00708BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B2CA1681DE9B2DA00708BD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B2CA16B1DE9B2DA00708BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B2CA16D1DE9B2DA00708BD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B2CA14F1DE9B2DA00708BD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B2CA1491DE9B2DA00708BD1 = {
+			isa = PBXGroup;
+			children = (
+				8B2CA1541DE9B2DA00708BD1 /* Pong */,
+				8B2CA1531DE9B2DA00708BD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B2CA1531DE9B2DA00708BD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B2CA1521DE9B2DA00708BD1 /* Pong.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B2CA1541DE9B2DA00708BD1 /* Pong */ = {
+			isa = PBXGroup;
+			children = (
+				8B2CA1581DE9B2DA00708BD1 /* AppDelegate.h */,
+				8B2CA1591DE9B2DA00708BD1 /* AppDelegate.m */,
+				8B2CA15B1DE9B2DA00708BD1 /* GameScene.sks */,
+				8B2CA15D1DE9B2DA00708BD1 /* Actions.sks */,
+				8B2CA15F1DE9B2DA00708BD1 /* GameScene.h */,
+				8B2CA1601DE9B2DA00708BD1 /* GameScene.m */,
+				8B2CA1621DE9B2DA00708BD1 /* GameViewController.h */,
+				8B2CA1631DE9B2DA00708BD1 /* GameViewController.m */,
+				8B2CA1651DE9B2DA00708BD1 /* Main.storyboard */,
+				8B2CA1681DE9B2DA00708BD1 /* Assets.xcassets */,
+				8B2CA16A1DE9B2DA00708BD1 /* LaunchScreen.storyboard */,
+				8B2CA16D1DE9B2DA00708BD1 /* Info.plist */,
+				8B2CA1551DE9B2DA00708BD1 /* Supporting Files */,
+			);
+			path = Pong;
+			sourceTree = "<group>";
+		};
+		8B2CA1551DE9B2DA00708BD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B2CA1561DE9B2DA00708BD1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B2CA1511DE9B2DA00708BD1 /* Pong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B2CA1701DE9B2DA00708BD1 /* Build configuration list for PBXNativeTarget "Pong" */;
+			buildPhases = (
+				8B2CA14E1DE9B2DA00708BD1 /* Sources */,
+				8B2CA14F1DE9B2DA00708BD1 /* Frameworks */,
+				8B2CA1501DE9B2DA00708BD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pong;
+			productName = Pong;
+			productReference = 8B2CA1521DE9B2DA00708BD1 /* Pong.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B2CA14A1DE9B2DA00708BD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = blastly;
+				TargetAttributes = {
+					8B2CA1511DE9B2DA00708BD1 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = U75DBEPBZS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8B2CA14D1DE9B2DA00708BD1 /* Build configuration list for PBXProject "Pong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B2CA1491DE9B2DA00708BD1;
+			productRefGroup = 8B2CA1531DE9B2DA00708BD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B2CA1511DE9B2DA00708BD1 /* Pong */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B2CA1501DE9B2DA00708BD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2CA1671DE9B2DA00708BD1 /* Main.storyboard in Resources */,
+				8B2CA15C1DE9B2DA00708BD1 /* GameScene.sks in Resources */,
+				8B2CA1691DE9B2DA00708BD1 /* Assets.xcassets in Resources */,
+				8B2CA16C1DE9B2DA00708BD1 /* LaunchScreen.storyboard in Resources */,
+				8B2CA15E1DE9B2DA00708BD1 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B2CA14E1DE9B2DA00708BD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2CA1641DE9B2DA00708BD1 /* GameViewController.m in Sources */,
+				8B2CA15A1DE9B2DA00708BD1 /* AppDelegate.m in Sources */,
+				8B2CA1611DE9B2DA00708BD1 /* GameScene.m in Sources */,
+				8B2CA1571DE9B2DA00708BD1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8B2CA1651DE9B2DA00708BD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B2CA1661DE9B2DA00708BD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B2CA16A1DE9B2DA00708BD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B2CA16B1DE9B2DA00708BD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B2CA16E1DE9B2DA00708BD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B2CA16F1DE9B2DA00708BD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B2CA1711DE9B2DA00708BD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U75DBEPBZS;
+				INFOPLIST_FILE = Pong/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = blastly.Pong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8B2CA1721DE9B2DA00708BD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U75DBEPBZS;
+				INFOPLIST_FILE = Pong/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = blastly.Pong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B2CA14D1DE9B2DA00708BD1 /* Build configuration list for PBXProject "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B2CA16E1DE9B2DA00708BD1 /* Debug */,
+				8B2CA16F1DE9B2DA00708BD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B2CA1701DE9B2DA00708BD1 /* Build configuration list for PBXNativeTarget "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B2CA1711DE9B2DA00708BD1 /* Debug */,
+				8B2CA1721DE9B2DA00708BD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B2CA14A1DE9B2DA00708BD1 /* Project object */;
+}
