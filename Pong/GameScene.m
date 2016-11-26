@@ -151,11 +151,26 @@ static const uint32_t ballCategory        =  0x1 << 1;
     float location = fabs(position) * CGRectGetMaxY(self.frame);
     NSLog(@"location = %f, position = %f", location, position);
     
-    float ypos = MIN(CGRectGetMinY(self.frame) + location, CGRectGetMaxY(self.frame) - 0.5 * _boardHeight);
+    // Handle NaN
+    if (location != location) {
+        location = 0.0f;
+    }
+    
+    float ypos = MIN(CGRectGetMinY(self.frame) + location + _boardHeight / 2, CGRectGetMaxY(self.frame) - 0.5 * _boardHeight);
     //NSLog(@"ypos = %f", ypos);
     // Called before each frame is rendered
     _playerBer.position = CGPointMake(CGRectGetMaxX(self.frame) - 0.5 * _boardWidth, ypos);
-    _enemyBar.position = CGPointMake(CGRectGetMinX(self.frame) + 0.5* _boardWidth, _ball.position.y);
+    
+    float enemyPos;
+    float posDiff = _ball.position.y - _enemyBar.position.y;
+    float enemySpeed = 12;
+    if (fabs(posDiff) < enemySpeed) {
+        enemyPos = _ball.position.y;
+    } else {
+        int direction = signum2(posDiff);
+        enemyPos = _enemyBar.position.y + direction*enemySpeed;
+    }
+    _enemyBar.position = CGPointMake(CGRectGetMinX(self.frame) + 0.5* _boardWidth, enemyPos);
     
     if (_ball.position.x + _ball.frame.size.width / 2 > _playerBer.position.x) {
         //NSLog(@"Hit the wall");
@@ -166,5 +181,8 @@ static const uint32_t ballCategory        =  0x1 << 1;
     //NSLog(@"Y: %f", y);
     [self updateBoardLocation:y];
 }
+
+int signum2(float n) { return (n < 0) ? -1 : (n > 0) ? +1 : 0; }
+
 
 @end
