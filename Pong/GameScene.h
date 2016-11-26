@@ -8,6 +8,9 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface GameScene : SKScene
+@interface GameScene : SKScene <SKPhysicsContactDelegate>
+
+- (void)updateYcoord:(float)y;
+
 
 @end

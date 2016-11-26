@@ -16,6 +16,7 @@
 		8B2CA1671DE9B2DA00708BD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CA1651DE9B2DA00708BD1 /* Main.storyboard */; };
 		8B2CA1691DE9B2DA00708BD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CA1681DE9B2DA00708BD1 /* Assets.xcassets */; };
 		8B2CA16C1DE9B2DA00708BD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CA16A1DE9B2DA00708BD1 /* LaunchScreen.storyboard */; };
+		8B2CA1751DE9CCF100708BD1 /* BLMagManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA1741DE9CCF100708BD1 /* BLMagManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		8B2CA1681DE9B2DA00708BD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B2CA16B1DE9B2DA00708BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B2CA16D1DE9B2DA00708BD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B2CA1731DE9CCF100708BD1 /* BLMagManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMagManager.h; sourceTree = "<group>"; };
+		8B2CA1741DE9CCF100708BD1 /* BLMagManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMagManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 			children = (
 				8B2CA1581DE9B2DA00708BD1 /* AppDelegate.h */,
 				8B2CA1591DE9B2DA00708BD1 /* AppDelegate.m */,
+				8B2CA1731DE9CCF100708BD1 /* BLMagManager.h */,
+				8B2CA1741DE9CCF100708BD1 /* BLMagManager.m */,
 				8B2CA15B1DE9B2DA00708BD1 /* GameScene.sks */,
 				8B2CA15D1DE9B2DA00708BD1 /* Actions.sks */,
 				8B2CA15F1DE9B2DA00708BD1 /* GameScene.h */,
@@ -164,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2CA1751DE9CCF100708BD1 /* BLMagManager.m in Sources */,
 				8B2CA1641DE9B2DA00708BD1 /* GameViewController.m in Sources */,
 				8B2CA15A1DE9B2DA00708BD1 /* AppDelegate.m in Sources */,
 				8B2CA1611DE9B2DA00708BD1 /* GameScene.m in Sources */,
