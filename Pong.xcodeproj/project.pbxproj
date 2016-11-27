@@ -17,6 +17,7 @@
 		8B2CA1691DE9B2DA00708BD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CA1681DE9B2DA00708BD1 /* Assets.xcassets */; };
 		8B2CA16C1DE9B2DA00708BD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CA16A1DE9B2DA00708BD1 /* LaunchScreen.storyboard */; };
 		8B2CA1751DE9CCF100708BD1 /* BLMagManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA1741DE9CCF100708BD1 /* BLMagManager.m */; };
+		8B2CA1771DEA1BA900708BD1 /* fireparticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CA1761DEA1BA900708BD1 /* fireparticle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8B2CA16D1DE9B2DA00708BD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B2CA1731DE9CCF100708BD1 /* BLMagManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMagManager.h; sourceTree = "<group>"; };
 		8B2CA1741DE9CCF100708BD1 /* BLMagManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMagManager.m; sourceTree = "<group>"; };
+		8B2CA1761DEA1BA900708BD1 /* fireparticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fireparticle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				8B2CA15D1DE9B2DA00708BD1 /* Actions.sks */,
 				8B2CA15F1DE9B2DA00708BD1 /* GameScene.h */,
 				8B2CA1601DE9B2DA00708BD1 /* GameScene.m */,
+				8B2CA1761DEA1BA900708BD1 /* fireparticle.sks */,
 				8B2CA1621DE9B2DA00708BD1 /* GameViewController.h */,
 				8B2CA1631DE9B2DA00708BD1 /* GameViewController.m */,
 				8B2CA1651DE9B2DA00708BD1 /* Main.storyboard */,
@@ -159,6 +162,7 @@
 				8B2CA1691DE9B2DA00708BD1 /* Assets.xcassets in Resources */,
 				8B2CA16C1DE9B2DA00708BD1 /* LaunchScreen.storyboard in Resources */,
 				8B2CA15E1DE9B2DA00708BD1 /* Actions.sks in Resources */,
+				8B2CA1771DEA1BA900708BD1 /* fireparticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
